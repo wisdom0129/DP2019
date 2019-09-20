@@ -71,5 +71,118 @@
             <dd>순서에 중요한 의미가 있는 목록을 이야기 한다.</dd>
         </dl>
 
+        <!-- strong, em <> b, i -->
+        <strong>강한 강조</strong>
+        <em>강조</em>
+
+        <b>볼드체</b>
+        <i>이텔릭체</i>
+        
+        <!--ins 첨부글, del 삭제글 <> u, strike -->
+        <ins>첨부하는 내용</ins>
+        <del>쓸때없는 내용. 변경되어 삭제될 내용</del>
+
+        <u>밑줄</u>
+        <strike>중간줄</strike>
+
+        <!-- sup 윗첨자, sub 아랫첨자 -->
+        2<sup>2</sup> : 제곱수, 2의 2승
+        H<sub>2</sub>0 : 물의 화학식
+
+        <img src="images/hate.jpeg" width="100px"/>
+        <img src="./images/hate.jpeg" height="100px"/>
+
+        <style>
+            table, tr, td{
+                border: solid 1px black;
+            }
+        </style>
+        <!-- table 도표 -->
+        <!--table, tr 행 한줄, td 열 한칸 -->
+        <!-- summary 요약, caption 표제 -->
+        <table sumary="표의요약, 학생명단">
+                <caption>[표1] 표의제목</caption>
+                <!-- thead, tbody tfoot-->
+            <thead>
+               <tr>
+                   <!-- scope = col(행), row(열) -->
+                   <th scope="col">제목1</th>
+                   <th scope="col">제목2</th>
+                   <th scope="col">제목3</th>
+                   <th scope="col">제목4</th>
+                   <th scope="col">제목5</th>
+
+               </tr>
+            </thead>
+            <tbody>
+            <tr>
+                    <!-- colspan (열 늘이기, 가로로 늘림), rowspan (행 늘이기, 세로로 늘림)-->
+                        <td colspan="2">1</td> <!-- 가로로 두칸 차지함-->
+                        <td rowspan="2">2</td> <!-- 세로로 두칸 차지함-->
+                        <td>3</td>
+                        <td>4</td>
+                </tr>
+                <tr>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                </tr>
+            </tbody>
+
+        </table>
+
+        <br/>
+                <caption><strong>[표2] 도전과제</strong></caption>
+
+        <table>
+
+            <tr>
+                    <td colspan="5">up</td> <!-- 가로로 두칸 차지함-->
+                    <td rowspan="2">right</td> <!-- 세로로 두칸 차지함-->
+
+            </tr>
+            <tr>
+                    <td rowspan="2">left</td>
+                    <td colspan="2">center</td>
+            </tr>
+            <tr>
+                    <td colspan="6">down</td>
+            </tr>
+        </table>
+        <br/>
+        <form>
+                <input type="text" placeholder="아이디를 입력하세요."/>
+                <input type="password" placeholder="패스워드를 입력하세요."/>
+                <input type="radio" name="bt1"/>
+                <input type="radio"name="bt1"/>
+                <input type="radio"name="bt1"/>
+                <!-- name이 동일 해야함-->
+                <input type="radio" name="bt2"/>
+                <input type="radio"name="bt2"/>
+                <input type="radio"name="bt2"/>
+
+                <input type="checkbox" />
+                <input type="checkbox" />
+                <input type="checkbox" />
+                <input type="checkbox" />
+
+                <select>
+                        <option>짜장면</option>
+                        <option>짬뽕</option>
+                </select>
+
+                <textarea cols="30" rows="5">
+            
+                </textarea>
+                <input type="button" value= "완료" />
+                <input type="button" value= "테스트버튼" onclick="alert('테스트 버튼이 눌렸습니다.')" />
+
+                <input type="submit" value="제출"/>
+                    </form>
+    
+
+    
+
     </bady>
 </html>
