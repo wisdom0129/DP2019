@@ -41,7 +41,7 @@
            
            <style>
                 .jeju, .jeju tr, .jeju td{
-                    border: solid 3px skyblue;
+                    border: solid 3px rgb(141, 141, 141);
                     text-align: center;
                     width: 1600px;
                     height: 50px;
@@ -96,7 +96,7 @@
             <style>
                     .jeju2, .jeju2 tr, .jeju2 td{
                         margin: 0 auto;
-                        border: solid 3px #5dbeff;
+                        border: solid 3px #ff3939;
                         text-align: center;
                         align-content: center;
                         width: 150px;
@@ -276,13 +276,129 @@
         <br/>
         <br/>
             <div style="color:red;"> <h2>제공된 정보에 만족하십니까?</h2> </div>
-                <strong>홈페이지가 더욱 발전 할 수 있도록 도움을 주세요.</strong>
+            <div style="color:rgb(138, 138, 138);"> 홈페이지가 더욱 발전 할 수 있도록 도움을 주세요 </div>
+                
                 <br/>
                 <br/>
                 <br/>
+                <h3>1. 유익한 정보를 얻었다.</h3>
+                <style>
+                    .qa, .qa tr, .qa td{
+                        margin: 0 auto;
+                    background-color:#f7f7f7;
+                    border: solid 3px #f7f7f7
+                        text-align: center;
+                        width: 500px;
+                        height: 20px;
+                    
+                    }
+                </style>
+                <table class="qa">
+                    <!-- thead, tbody tfoot-->
+                <thead>
+                   <tr>
+                       <!-- scope = col(행), row(열) -->
+                       <th scope="col"><input type="radio" name="bt1"/></th>
+                       <th scope="col"><input type="radio" name="bt1"/></th>
+                       <th scope="col"><input type="radio" name="bt1"/></th>
+                       <th scope="col"><input type="radio" name="bt1"/></th>
+                       <th scope="col"><input type="radio" name="bt1"/></th>
 
-                <input type="radio" name="bt1"/>
-                안녕하세요
+    
+                   </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <!-- colspan (열 늘이기, 가로로 늘림), rowspan (행 늘이기, 세로로 늘림)-->
+                            <td>그렇다</td>
+                            <td>조금 그렇다</td>
+                            <td>보통이다</td>
+                            <td>조금 아니다</td>
+                            <td>전혀 아니다</td>
+                    </tr>
+                    </table>
+
+                            <br/>
+                <br/>
+                <br/>
+                <h3>2. 제주도 또는 경주에 놀러가고 싶은 마음이 생겼다.</h3>
+
+                            <table class="qa">
+                                <!-- thead, tbody tfoot-->
+                            <thead>
+                               <tr>
+                                   <!-- scope = col(행), row(열) -->
+                                   <th scope="col"><input type="radio" name="bt1"/></th>
+                                   <th scope="col"><input type="radio" name="bt1"/></th>
+                                   <th scope="col"><input type="radio" name="bt1"/></th>
+                                   <th scope="col"><input type="radio" name="bt1"/></th>
+                                   <th scope="col"><input type="radio" name="bt1"/></th>
+            
+                
+                               </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <!-- colspan (열 늘이기, 가로로 늘림), rowspan (행 늘이기, 세로로 늘림)-->
+                                        <td>그렇다</td>
+                                        <td>조금 그렇다</td>
+                                        <td>보통이다</td>
+                                        <td>조금 아니다</td>
+                                        <td>전혀 아니다</td>
+                                        </tr>
+
+                </tbody>
+            </table>
+
+
+            
+
+                            <br/>
+                            <br/>
+                            <br/>
+                            <h3>3. 본인이 추천하고 싶은 국내 여행지가 있다면?</h3>
+                            
+                            <select>
+                                <option>경기도</option>
+                                <option>서울특별시</option>
+                                <option>인천광역시</option>
+                                <option>강원도</option>
+                                <option>경상도</option>
+                                <option>전라도</option>
+                                <option>충청도</option>
+                                <option>부산광역시</option>
+                                </select>
+
+                                <select>
+                                    <option>안양시</option>
+                                    <option>의왕시</option>
+                                    <option>안산시</option>
+                                    <option>수원시</option>
+                                    <option>부천시</option>
+                                    <option>하남시</option>
+                                    <option>광명시</option>
+                                    <option>고양시</option>
+                                    <option>군포시</option>
+                                    <option>화성시</option>
+                                    </select>
+
+                                    <br/>
+                                    <br/>
+                                    <br/>
+                                    <h3>4. 기타 문의 사항 및 개선/보완 점을 아래에 적어주세요.</h3>
+                                    <textarea col="50" raw="5"> </textarea>
+                                    <br/>
+                                    <br/>
+                                    <br/>
+                                    <input type="button" value= "제출하기" onclick="alert('좋은 의견 감사합니다. 오늘도 좋은하루 되세요^^')" /> 
+
+                                
+
+
+            
+                            
+
+
                                 
 
 
